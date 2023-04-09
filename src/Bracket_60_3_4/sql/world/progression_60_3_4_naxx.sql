@@ -21,7 +21,7 @@ DELETE FROM `mapdifficulty_dbc` WHERE `MapID` = @MAP_ID;
 INSERT INTO `mapdifficulty_dbc`
 (`ID`, `MapID`, `Difficulty`, `RaidDuration`, `MaxPlayers`, `Difficultystring`)
 VALUES
-(128, @MAP_ID, 1, 604800, 40, 'RAID_DIFFICULTY_40PLAYER');
+(128, @MAP_ID, 1, 604800, 25, 'RAID_DIFFICULTY_25PLAYER');
 -- Set access to min level 60 for Naxx25
 UPDATE `dungeon_access_template` SET `min_level` = 60 WHERE `map_id` = @MAP_ID AND `difficulty` = 1;
 

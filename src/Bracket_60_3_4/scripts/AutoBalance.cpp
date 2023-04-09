@@ -109,7 +109,7 @@ class AutoBalance_UnitScript : public UnitScript
         return _Modifer_DealDamage(playerVictim, AttackerUnit, damage);
     }
 
-    void ModifyPeriodicDamageAurasTick(Unit* target, Unit* attacker, uint32& damage, SpellInfo const* spellInfo) override
+    void ModifyPeriodicDamageAurasTick(Unit* target, Unit* attacker, uint32& damage) override
     {
         damage = _Modifer_DealDamage(target, attacker, damage);
     }
@@ -124,9 +124,8 @@ class AutoBalance_UnitScript : public UnitScript
         damage = _Modifer_DealDamage(target, attacker, damage);
     }
 
-    void ModifyHealReceived(Unit* target, Unit* healer, uint32& addHealth, SpellInfo const* spellInfo) override
-    {
-        addHealth = _Modifer_DealDamage(target, healer, addHealth);
+    void ModifyHealReceived(Unit* target, Unit* healer/*healer*/, uint32& heal, SpellInfo const* spellInfo) override {
+        heal = _Modifer_DealDamage(target, healer, heal);
     }
 
 
@@ -155,7 +154,7 @@ public:
     {
     }
 
-    void OnCreatureSelectLevel(const CreatureTemplate* /*creatureTemplate*/, Creature* creature) override
+    void Creature_SelectLevel(const CreatureTemplate* /*creatureTemplate*/, Creature* creature) override
     {
         ModifyCreatureAttributes(creature, true);
     }
@@ -218,7 +217,7 @@ public:
             creatureABInfo->selectedLevel = originalLevel - 20;
             creature->SetLevel(creatureABInfo->selectedLevel);
         } else {
-            creatureABInfo->selectedLevel = creature->GetLevel();
+            creatureABInfo->selectedLevel = creature->getLevel();
         }
 
         creatureABInfo->entry = creature->GetEntry();
