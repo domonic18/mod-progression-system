@@ -311,24 +311,27 @@ INSERT INTO `creature_loot_template`
 VALUES
 (@Sapphiron, 34101, 34101, 100, 0, 1, 1, 1, 1, 'Sapphiron (1) - (ReferenceTable)'),
 (@Sapphiron, 34135, 34135, 100, 0, 1, 2, 1, 1, 'Sapphiron (1) - (ReferenceTable)'),
-(@Sapphiron, 23040,     0,   0, 1, 1, 3, 1, 1, 'Sapphiron (1) - Glyph of Deflection'),
-(@Sapphiron, 23041,     0,   0, 1, 1, 3, 1, 1, 'Sapphiron (1) - Slayer\'s Crest'),
-(@Sapphiron, 23043,     0,   0, 1, 1, 3, 1, 1, 'Sapphiron (1) - The Face of Death'),
-(@Sapphiron, 23045,     0,   0, 1, 1, 3, 1, 1, 'Sapphiron (1) - Shroud of Dominion'),
-(@Sapphiron, 23242,     0,   0, 1, 1, 3, 1, 1, 'Sapphiron (1) - Claw of the Frost Wyrm'),
-(@Sapphiron, 23046,     0,   0, 1, 1, 4, 1, 1, 'Sapphiron (1) - The Restrained Essence of Sapphiron'),
-(@Sapphiron, 23047,     0,   0, 1, 1, 4, 1, 1, 'Sapphiron (1) - Eye of the Dead'),
-(@Sapphiron, 23048,     0,   0, 1, 1, 4, 1, 1, 'Sapphiron (1) - Sapphiron\'s Right Eye'),
-(@Sapphiron, 23049,     0,   0, 1, 1, 4, 1, 1, 'Sapphiron (1) - Sapphiron\'s Left Eye'),
-(@Sapphiron, 23050,     0,   0, 1, 1, 4, 1, 1, 'Sapphiron (1) - Cloak of the Necropolis');
-DELETE FROM `reference_loot_template` WHERE `Entry` IN (34101, 34135);
+(@Sapphiron, 910001, 910001, 100, 0, 1, 3, 1, 1, 'Sapphiron (1) - (ReferenceTable)'),
+(@Sapphiron, 910002, 910002, 100, 0, 1, 4, 1, 1, 'Sapphiron (1) - (ReferenceTable)');
+
+DELETE FROM `reference_loot_template` WHERE `Entry` IN (34101, 34135, 910001, 910002);
 INSERT INTO `reference_loot_template` (`Entry`, `Item`, `Reference`, `Chance`,
 `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`)
 VALUES
+(910001, 23040, 0, 0, 0, 0, 3, 1, 1, 'Sapphiron (1) - Glyph of Deflection'),
+(910001, 23041, 0, 0, 0, 0, 3, 1, 1, 'Sapphiron (1) - Slayer\'s Crest'),
+(910001, 23043, 0, 0, 0, 0, 3, 1, 1, 'Sapphiron (1) - The Face of Death'),
+(910001, 23045, 0, 0, 0, 0, 3, 1, 1, 'Sapphiron (1) - Shroud of Dominion'),
+(910001, 23242, 0, 0, 0, 0, 3, 1, 1, 'Sapphiron (1) - Claw of the Frost Wyrm'),
+(910002, 23046, 0, 0, 0, 0, 4, 1, 1, 'Sapphiron (1) - The Restrained Essence of Sapphiron'),
+(910002, 23047, 0, 0, 0, 0, 4, 1, 1, 'Sapphiron (1) - Eye of the Dead'),
+(910002, 23048, 0, 0, 0, 0, 4, 1, 1, 'Sapphiron (1) - Sapphiron\'s Right Eye'),
+(910002, 23049, 0, 0, 0, 0, 4, 1, 1, 'Sapphiron (1) - Sapphiron\'s Left Eye'),
+(910002, 23050, 0, 0, 0, 0, 4, 1, 1, 'Sapphiron (1) - Cloak of the Necropolis'),
 (34101, 23545, 0, 0, 0, 1, 1, 1, 1, 'Power of the Scourge'),
 (34101, 23547, 0, 0, 0, 1, 1, 1, 1, 'Resilience of the Scourge'),
-(34135, 23548, 0, 0, 0, 1, 1, 1, 1, 'Might of the Scourge'),
-(34135, 23549, 0, 0, 0, 1, 1, 1, 1, 'Fortitude of the Scourge');
+(34135, 23548, 0, 0, 0, 1, 2, 1, 1, 'Might of the Scourge'),
+(34135, 23549, 0, 0, 0, 1, 2, 1, 1, 'Fortitude of the Scourge');
 
 -- Kel'Thuzad
 DELETE FROM `creature_loot_template` WHERE `Entry` = @Kelthuzad;
