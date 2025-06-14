@@ -1,0 +1,19 @@
+-- Remove attunement requirement for heroic mode
+-- Caverns of Time: Opening the Dark Portal
+-- Hellfire Citadel: The Shattered Halls
+-- Hellfire Citadel: The Blood Furnace
+-- Hellfire Citadel: Hellfire Ramparts
+-- Coilfang Resevoir: The Steamvault
+-- Coilfang Resevoir: The Underbog
+-- Coilfang Resevoir: The Slave Pens
+-- Tempest Keep: The Arcatraz
+-- Tempest Keep: The Botanica
+-- Tempest Keep: The Mechanar
+-- Auchindoun: Shadow Labyrinth 
+-- Auchindoun: Sethekk Halls
+-- Auchindoun: Mana-Tombs
+-- Auchindoun: Auchenai Crypts
+-- Caverns Of Time: Escape from Durnholde
+-- Progression: Phase 2: Serpentshrine Cavern
+-- Progression: Phase 2: The Eye
+DELETE FROM `dungeon_access_requirements` WHERE `dungeon_access_id` IN (17,18,34,36,38,41,43,45,46,47,49,51,53,55,57,59,61,62,63);
