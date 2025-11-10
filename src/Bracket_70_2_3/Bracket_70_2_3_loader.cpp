@@ -4,12 +4,12 @@
 
 #include "ProgressionSystem.h"
 
-void AddSC_serpentshrine_cavern_70();
+void AddSC_karazhan_70();
 
-void AddBracket_70_3_A_Scripts()
+void AddBracket_70_2_C_Scripts()
 {
-    if (!(sConfigMgr->GetOption<bool>("ProgressionSystem.Bracket_70_3_1", false)))
+    if (!(sConfigMgr->GetOption<bool>("ProgressionSystem.Bracket_70_2_3", false)))
         return;
 
-    AddSC_serpentshrine_cavern_70();
+    AddSC_karazhan_70();
 }

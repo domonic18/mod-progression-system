@@ -32,6 +32,7 @@ std::array<std::string, PROGRESSION_BRACKET_MAX> const ProgressionBracketsNames 
     "70_1_2",
     "70_2_1",
     "70_2_2",
+    "70_2_3",
     "70_3_1",
     "70_3_2",
     "70_4_1",
