@@ -1,20 +1,20 @@
--- Archimonde（HealthModifier=525 → 1052)
-UPDATE `creature_template` SET `HealthModifier` = 1052 WHERE (`entry` = 17968);
+-- Archimonde（HealthModifier=525 → 788)
+UPDATE `creature_template` SET `HealthModifier` = 788 WHERE (`entry` = 17968);
 
--- Azgalor（HealthModifier=490 → 980) 
-UPDATE `creature_template` SET `HealthModifier` = 980 WHERE (`entry` = 17842);
-
-
--- Anetheron（HealthModifier=490 → 980) 
-UPDATE `creature_template` SET `HealthModifier` = 980 WHERE (`entry` = 17808);
+-- Azgalor（HealthModifier=490 → 735)
+UPDATE `creature_template` SET `HealthModifier` = 735 WHERE (`entry` = 17842);
 
 
--- Kaz'rogal（HealthModifier=490 → 980)     
-UPDATE `creature_template` SET `HealthModifier` = 980 WHERE (`entry` = 17888);
+-- Anetheron（HealthModifier=490 → 735)
+UPDATE `creature_template` SET `HealthModifier` = 735 WHERE (`entry` = 17808);
 
 
--- Rage Winterchill（HealthModifier=490 → 980)   
-UPDATE `creature_template` SET `HealthModifier` = 980 WHERE (`entry` = 17767);
+-- Kaz'rogal（HealthModifier=490 → 735)
+UPDATE `creature_template` SET `HealthModifier` = 735 WHERE (`entry` = 17888);
+
+
+-- Rage Winterchill（HealthModifier=490 → 735)
+UPDATE `creature_template` SET `HealthModifier` = 735 WHERE (`entry` = 17767);
 
 
 

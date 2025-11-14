@@ -61,7 +61,7 @@ INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconNa
 -- (5199,533,2994.63,-3434.37,297.928,0,9.3,1.718,8,4.728);
 
 --Recover triggers teleport to Naxx exits
-DELETE FROM `areatrigger_teleport` WHERE `ID` in (5196, 5197, 5198,  5199);
+DELETE FROM `areatrigger_teleport` WHERE `ID` in (5196, 5197, 5198, 5199);
 INSERT INTO `areatrigger_teleport` 
 (`ID`, `Name`, `target_map`, `target_position_x`, `target_position_y`,`target_position_z`, `target_orientation`)
 VALUES 
