@@ -155,7 +155,7 @@ public:
     {
     }
 
-    void Creature_SelectLevel(const CreatureTemplate* /*creatureTemplate*/, Creature* creature) override
+    void OnCreatureSelectLevel(const CreatureTemplate* /*creatureTemplate*/, Creature* creature) override
     {
         ModifyCreatureAttributes(creature, true);
     }
@@ -218,7 +218,7 @@ public:
             creatureABInfo->selectedLevel = originalLevel - 20;
             creature->SetLevel(creatureABInfo->selectedLevel);
         } else {
-            creatureABInfo->selectedLevel = creature->getLevel();
+            creatureABInfo->selectedLevel = creature->GetLevel();
         }
 
         creatureABInfo->entry = creature->GetEntry();

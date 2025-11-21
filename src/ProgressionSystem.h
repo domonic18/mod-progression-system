@@ -7,10 +7,12 @@
 
 #include "Config.h"
 #include "ScriptMgr.h"
+#include <array>
+#include <string>
 
 #define PROGRESSION_BRACKET_MAX 37
 std::array<std::string, PROGRESSION_BRACKET_MAX> const ProgressionBracketsNames =
-{
+{{
     "0",
     "1_19",
     "20_29",
@@ -47,8 +49,7 @@ std::array<std::string, PROGRESSION_BRACKET_MAX> const ProgressionBracketsNames 
     "80_2",
     "80_3",
     "80_4_1",
-    "80_4_2",
-    "Custom"
-};
+    "80_4_2"
+}};
 
 #endif // _PROGRESSION_SYSTEM_H_
