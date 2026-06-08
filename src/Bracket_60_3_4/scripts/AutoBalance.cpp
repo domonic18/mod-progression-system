@@ -154,7 +154,7 @@ public:
     {
     }
 
-    void Creature_SelectLevel(const CreatureTemplate* /*creatureTemplate*/, Creature* creature) override
+    void OnCreatureSelectLevel(const CreatureTemplate* /*creatureTemplate*/, Creature* creature) override
     {
         ModifyCreatureAttributes(creature, true);
     }
