@@ -311,7 +311,7 @@ public:
         uint32 prevHealth = creature->GetHealth();
         uint32 prevPower = creature->GetPower(POWER_MANA);
 
-        Powers pType = creature->GetPowerType();
+        Powers pType = creature->getPowerType();
 
         creature->SetArmor(newBaseArmor);
         creature->SetModifierValue(UNIT_MOD_ARMOR, BASE_VALUE, (float)newBaseArmor);
