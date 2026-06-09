@@ -229,7 +229,7 @@ public:
                     _events.ScheduleEvent(EVENT_VOID_BOLT, 15s, 18s);
                     break;
                 case EVENT_MARK_OF_KAZZAK:
-                    if (Unit* target = SelectTarget(SelectTargetMethod::Random, 1, [&](Unit* u) { return u && !u->IsPet() && u->getPowerType() == POWER_MANA; }))
+                    if (Unit* target = SelectTarget(SelectTargetMethod::Random, 1, [&](Unit* u) { return u && !u->IsPet() && u->GetPowerType() == POWER_MANA; }))
                         DoCast(target, SPELL_MARK_OF_KAZZAK);
                     _events.ScheduleEvent(EVENT_MARK_OF_KAZZAK, 20s);
                     break;

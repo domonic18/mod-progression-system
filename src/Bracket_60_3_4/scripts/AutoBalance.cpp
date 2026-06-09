@@ -217,7 +217,7 @@ public:
             creatureABInfo->selectedLevel = originalLevel - 20;
             creature->SetLevel(creatureABInfo->selectedLevel);
         } else {
-            creatureABInfo->selectedLevel = creature->getLevel();
+            creatureABInfo->selectedLevel = creature->GetLevel();
         }
 
         creatureABInfo->entry = creature->GetEntry();
@@ -311,7 +311,7 @@ public:
         uint32 prevHealth = creature->GetHealth();
         uint32 prevPower = creature->GetPower(POWER_MANA);
 
-        Powers pType= creature->getPowerType();
+        Powers pType = creature->GetPowerType();
 
         creature->SetArmor(newBaseArmor);
         creature->SetModifierValue(UNIT_MOD_ARMOR, BASE_VALUE, (float)newBaseArmor);
